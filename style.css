@@ -1,25 +1,153 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #0f172a;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
-    text-align: center;
+    scroll-behavior: smooth;
 }
 
-header {
-    padding: 40px;
-    background-color: #1e293b;
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(15, 23, 42, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-section {
-    padding: 30px;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-h2 {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
     color: #38bdf8;
 }
 
-footer {
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 150px 20px 100px;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #38bdf8;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #38bdf8;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* SKILLS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
     background-color: #1e293b;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #38bdf8;
+    color: black;
+}
+
+/* PROJECTS */
+
+.project {
+    background-color: #1e293b;
+    margin: 20px auto;
     padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0f172a;
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .project {
+        width: 90%;
+    }
 }
