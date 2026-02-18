@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     height: 100vh;
-    background: radial-gradient(circle at top left, #4f46e5, #0f172a 60%);
+    background: radial-gradient(circle at top left, #800020, #330000 60%);
     color: white;
     overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #60a5fa;
+    color: #f87171; /* léger rose pour contraste avec burgundy */
 }
 
 /* HERO SECTION */
@@ -65,7 +65,7 @@ body {
 .hero-text p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #cbd5e1;
+    color: #f0e5e5; /* couleur plus douce sur burgundy */
 }
 
 .buttons {
@@ -82,21 +82,21 @@ body {
 }
 
 .primary {
-    background: #2563eb;
+    background: #b22222; /* rouge foncé */
     color: white;
 }
 
 .primary:hover {
-    background: #1d4ed8;
+    background: #800000; /* encore plus foncé au survol */
 }
 
 .secondary {
-    border: 2px solid #2563eb;
+    border: 2px solid #b22222;
     color: white;
 }
 
 .secondary:hover {
-    background: #2563eb;
+    background: #b22222;
 }
 
 /* IMAGE */
