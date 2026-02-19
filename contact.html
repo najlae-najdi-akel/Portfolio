@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Najlae Najdi Akel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-title {
+            text-align: center;
+            padding: 40px 0 20px;
+            font-size: 36px;
+        }
+        .contact-container {
+            width: 60%;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px 30px;
+            transition: 0.3s;
+        }
+        .contact-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateX(5px);
+        }
+        .contact-icon {
+            font-size: 32px;
+            width: 55px;
+            text-align: center;
+        }
+        .contact-info h3 {
+            font-size: 14px;
+            color: #f0b0b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .contact-info p, .contact-info a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            color: #f87171;
+        }
+        @media(max-width: 900px) {
+            .contact-container { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1 class="page-title">Me Contacter</h1>
+
+<div class="contact-container">
+
+    <!-- 📞 Téléphone -->
+    <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <div class="contact-info">
+            <h3>Téléphone</h3>
+            <p>+212 651 189 485</p>
+        </div>
+    </div>
+
+    <!-- 📧 Email -->
+    <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div class="contact-info">
+            <h3>Email</h3>
+            <a href="mailto:najlae.najdiakel@etu.uae.ac.ma">najlae.najdiakel@etu.uae.ac.ma</a>
+        </div>
+    </div>
+
+    <!-- 💼 LinkedIn -->
+    <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <div class="contact-info">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/ton-Najlae NAJDI AKEL" target="_blank">linkedin.com/in/Najlae NAJDI AKEL</a>
+        </div>
+    </div>
+
+    <!-- 📍 Adresse -->
+    <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <div class="contact-info">
+            <h3>Adresse</h3>
+            <p>Tanger, Maroc</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
