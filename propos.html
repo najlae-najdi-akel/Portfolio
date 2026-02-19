@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos | Najlae Najdi Akel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-title {
+            text-align: center;
+            padding: 40px 0 10px;
+            font-size: 36px;
+        }
+        .about-container {
+            width: 70%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .about-section {
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px 35px;
+        }
+        .about-section h2 {
+            font-size: 22px;
+            color: #f0b0b0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            padding-bottom: 10px;
+        }
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #f0e5e5;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-badge {
+            background: rgba(178,34,34,0.5);
+            border: 1px solid #b22222;
+            border-radius: 20px;
+            padding: 6px 18px;
+            font-size: 14px;
+            color: white;
+        }
+        @media(max-width: 900px) {
+            .about-container { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1 class="page-title">À propos de moi</h1>
+
+<div class="about-container">
+
+    <!-- Présentation -->
+    <div class="about-section">
+        <h2>👩‍💻 Présentation</h2>
+        <p>
+            Je m'appelle Najlae Najdi Akel, étudiante en premiere annee cycle d'ingenieur en Logiciel & Systèmes Intelligents.
+            J'aime concevoir des solutions innovantes et j'ai un fort intérêt pour l'intelligence artificielle,
+            le développement web et la résolution de problèmes complexes.
+        </p>
+    </div>
+
+    <!-- Formation -->
+    <div class="about-section">
+        <h2>🎓 Formation</h2>
+        <p>
+            <strong>Faculte des sciences et techniques, Universite Abdelmalek Essaadi</strong> — Tanger, Maroc<br>
+            Filière : Génie Logiciel & Systèmes Intelligents<br>
+            Année : 2023 – 2028
+        </p>
+    </div>
+
+    <!-- Compétences -->
+    <div class="about-section">
+        <h2>🛠️ Compétences</h2>
+        <div class="skills-grid">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">HTML / CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">React</span>
+        </div>
+    </div>
+
+    <!-- Langues -->
+    <div class="about-section">
+        <h2>🌍 Langues</h2>
+        <div class="skills-grid">
+            <span class="skill-badge">Arabe — Natif</span>
+            <span class="skill-badge">Français — Courant</span>
+            <span class="skill-badge">Anglais — Intermédiaire</span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>v
