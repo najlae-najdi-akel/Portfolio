@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets | Najlae Najdi Akel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-title {
+            text-align: center;
+            padding: 40px 0 10px;
+            font-size: 36px;
+        }
+        .page-subtitle {
+            text-align: center;
+            color: #f0b0b0;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        .projects-grid {
+            width: 80%;
+            margin: 0 auto 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .project-card {
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 28px;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .project-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        .project-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #f0e5e5;
+            margin-bottom: 15px;
+        }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+        .tech-tag {
+            background: rgba(178,34,34,0.4);
+            border: 1px solid #b22222;
+            border-radius: 12px;
+            padding: 3px 12px;
+            font-size: 12px;
+            color: white;
+        }
+        .project-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #f87171;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .project-link:hover {
+            color: white;
+        }
+        @media(max-width: 900px) {
+            .projects-grid { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1 class="page-title">Mes Projets</h1>
+<p class="page-subtitle">Quelques projets sur lesquels j'ai travaillé</p>
+
+<div class="projects-grid">
+
+    <div class="project-card">
+        <h3>Outil de gestion pour un escape room</h3>
+        <p>
+            Il s'agit d'un outil de gestion complet personnalisee pour Phobia Escape Room Tanger, il permet au game master de communiquer avec les joueurs depuis son post a travers des ecrans connecter avec les PCs par des cables HDMI
+        </p>
+        <div class="tech-tags">
+            <!-- ✏️ Technologies utilisées -->
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Html</span>
+            <span class="tech-tag">Css</span>
+        </div>
+        <!-- ✏️ Lien GitHub ou autre (supprime si pas de lien) -->
+        <a href="#" class="project-link">→ Voir le projet</a>
+    </div>
+
+    <!-- ✏️ PROJET 2 -->
+    <div class="project-card">
+        <h3>BreakTaboo | Jeu de carte digitalisee</h3>
+        <p>
+            Courte description du projet. Qu'est-ce que tu as fait ? Quel problème ça résout ?
+        </p>
+        <div class="tech-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Machine Learning</span>
+        </div>
+        <a href="#" class="project-link">→ Voir le projet</a>
+    </div>
+
+    <!-- ✏️ PROJET 3 -->
+    <div class="project-card">
+        <h3>🌐 Nom du Projet 3</h3>
+        <p>
+            Courte description du projet. Qu'est-ce que tu as fait ? Quel problème ça résout ?
+        </p>
+        <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="#" class="project-link">→ Voir le projet</a>
+    </div>
+
+</div>
+</body>
+</html>
